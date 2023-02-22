@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SEBASTIEN RIGAUDIE</title>
+    <link rel="stylesheet" href="/Users/sebastienrigaudie/Desktop/ITE/CSS/front.css">
+    <link rel="icon" type="image/png" href="/Users/sebastienrigaudie/Desktop/ITE/PHOTO/Capture d’écran 2023-02-22 à 15.47.24.png">
+    <div id="current-time"></div>
+
+    <p id="text">Hello, world!</p>
+
+    <script>
+
+var text = document.getElementById("text");
+var i = 0;
+var speed = 1; // milliseconds per character
+
+setInterval(function() {
+  if (i < text.innerHTML.length) {
+    text.innerHTML = text.innerHTML.substring(0, i+1);
+    i++;
+  }
+}, speed);
+
+
+
+
+
+
+
+    </script>

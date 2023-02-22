@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SEBASTIEN RIGAUDIE</title>
+    <link rel="stylesheet" href="/Users/sebastienrigaudie/Desktop/ITE/CSS/front.css">
+    <link rel="icon" type="image/png" href="/Users/sebastienrigaudie/Desktop/ITE/PHOTO/Capture d’écran 2023-02-22 à 15.47.24.png">
+    <div id="current-time"></div>
+    <style>
+body {
+        font-size: 16px;
+        line-height: 1.5;
+
+      }
+      
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      @media screen and (min-width: 768px) {
+        .container {
+          width: 80%;
+        }
+      }
+      
+      @media screen and (min-width: 1024px) {
+        .container {
+          width: 70%;
+        }
+      }
+.main-content {
+    opacity: 0;
+    transition: opacity 4s
+  }
+.main-content.fade-in {
+    opacity: 1;
+  }
+body {
+    font-family: sans-serif;
+    background-color: #000000;;
+  }
+  nav ul {
+    list-style: none;
+    margin-left: 1130px;
+    
+  }
+  #current-time {
+    font-family: sans-serif;
+  font-size: 60px;
+  opacity: 0;
+  transition: opacity 2s;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 10px;
+  left: 33px;
+  transform: translate(-0%, -0%);
+}
+  nav li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  nav li a {
+    color: rgb(255, 244, 244);
+    text-decoration: none;
+  }
+
+section {
+  
+    color: rgb(255, 255, 255);
+    margin-top: -40px;
+    margin-left: -50px;
+    size: 50px;
+    padding: 80px;
+    font-size: 1em;
+
+  }
+h1, h2 {
+  z-index: 1;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+
+p {
+    color: rgb(255, 255, 255);
+    margin-left: 600px;
+    margin-top: -50px;
+}
+h4 {
+  z-index: 2000;
+  color: rgb(255, 244, 244);
+  margin-left: 450px;
+  font-family: sans-serif;
+  margin-top: 290px;
+  font-size: 2em;
+  white-space:pre;
+ 
+
+
+}
+h5 {
+  z-index: 1;
+  color: rgb(255, 244, 244);
+  margin-left: -295px;
+  font-family: sans-serif;
+  margin-top: 150px;
+  font-size: 2em;
+  white-space:pre;
+ 
+
+}
+.image1 {
+  position: absolute; 
+  top: 60px; 
+  left: 410px;
+  width: 970px;
+  z-index: -1;
+}
+
+.image2 {
+  position: absolute; 
+  top: 1110px; 
+  left: 40px;
+  width: 600px;
+  z-index: -1;
+}
+
+.image3 {
+  position: absolute; 
+  top: 1610px; 
+  left: 640px;
+  width: 740px;
+  z-index: -1;
+}
+
+.container {
+  z-index: 1;
+margin-left: 170px;
+margin-top: -200px;
+
+
+}
+h3 {
+
+  z-index: 1;
+  color: rgb(255, 244, 244);
+  white-space: pre-line;
+  margin-left: -170px;
+  font-family: sans-serif;
+  margin-top: 400px;
+  font-size: 2em;
+ text-align-last: left;
+text-size-adjust: 20px;
+}
+a {
+  color: rgb(255, 0, 0);
+}
+a[href*="https://www.3is-education.fr/"] {
+  color: rgb(255, 255, 0); 
+  text-decoration: none;
+}
+.animate-text {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    </style>
+  </head>
+  <script>
+  function displayTime() {
+  const now = new Date();
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const day = days[now.getDay()];
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  document.getElementById('current-time').style.opacity = 1;
+
+  document.getElementById('current-time').textContent = timeString;
+}
+
+setInterval(displayTime, 1000);
+    window.onload = function() {
+      document.querySelector('.main-content').classList.add('fade-in');
+    }
+  </script>
+  <body> <div class="main-content">
+      <nav>
+         <ul>
+          <li><a href="javascript:location.reload(true)">Home</a></li>
+          <li><a href="https://www.linkedin.com/in/s%C3%A9bastien-rigaudie-894b45266/">About</a></li>
+          <li><a href="mailto:sebastien.rigaudie@3is.fr">Contact</a></li>
+        </ul>
+      </nav>  
+<section>
+        <h2>SEBASTIEN RIGAUDIE</h2>
+        <h2>SOUND DESIGNER </h2>
+        <h2><a href="https://www.3is-education.fr/">STUDENT IN SCHOOL SOUND</a></h2>
+        <h2>PORTFOLIO</h2>
+        <div class="container">
+        <h3 class="animate-text">SLEEVE SHOCK (LONDON 17 JAN 2023), 
+          Invited by <a href="https://youtu.be/GdKReWA00k8">GROSTESQUE VERTIGE</a>
+          to make the sound of his animation.
+          Sleeve Shock was big experience for me 
+          Organized by JONATHAN ARMOUR
+          and the theme of the <a href="https://www.galleriesnow.net/shows/sleeve-shock/">EXPOSITION</a>
+          was about the Transhumanist </h3>
+          <h4 class="animate-text">
+            <a href="https://cycling74.com/products/max">MAX MSP</a> (RNBO) 
+            I learned how to make sound 
+            with MAX since 2022
+            and RNBO since 2023
+            Use for sound design session
+            and creative animation</h4>
+            <h5 class="animate-text">
+              PRO TOOLS (2023), This is one of the 
+              many DAWs I use for my sound 
+              <a>PROJECTS</a>. 
+              Used for the musical arrangement,
+              the vocal chain and sound video 
+              editing.
+            </h5></div>
+</section>
+
+<img src="/Users/sebastienrigaudie/Desktop/ITE/1E4D4B92-EC23-41A6-B177-F67AB19D6197_1_201_a.jpeg" class="image1">
+<img src="/Users/sebastienrigaudie/Desktop/ITE/PHOTO/Patch-2b-050.png" class="image2">
+<img src="/Users/sebastienrigaudie/Desktop/ITE/PHOTO/pro-tools.jpeg" class="image3">
+
+
+<p>&copy; Sébastien Rigaudie, 2023</p>
+
+</html>
